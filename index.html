@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>experience-form</title>
+	<meta charset="UTF-8"> <!--gives information about the website/blog-->
+	<meta name="blog" content="landing page">
+	<meta name="owned by" content="template"> 
+	<meta name="keywords" content="HTML,CSS,form">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/53d3f12009.js" crossorigin="anonymous"></script>  
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Signika+Negative:wght@300&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		body{
+			background: url("bgf.jpg");
+			background-repeat: no-repeat; 
+			background-position: center;
+			background-size: cover; 
+			height: 100%; 
+			width:100%;
+		} 
+		.wrapper{ 
+			text-align: center; 
+			margin-right:80px; 
+			margin-left:80px;
+
+		} 
+		.filler{
+			height: 1.5rem; 
+			width: 150px;
+		} 
+		.btn{
+			background-color:#7fffd4; 
+			text-decoration: none; 
+			padding: 0.8rem 2rem; 
+			color:black; 
+		} 
+		.btn: hover{
+			border-color:yellow; 
+
+		}
+		@media (max-width:600px){
+			
+			.wrapper{
+				text-align: left;
+				margin-right:22px; 
+				margin-left:10px;
+			} 
+			#text{
+				margin-left:5px; 
+				background-color:#D3D3D3;
+			} 
+			.filler{ 
+				background-color:#D3D3D3;
+
+			}
+		}
+	</style>
+</head>  
+
+<div class="wrapper">
+	<!--the heading--> 
+	<div class='heading'> 
+		<h1 style="color:white;font-size:40px;font-family: 'Architects Daughter', cursive;">We would love to hear your experience!!</h1>
+	</div> 
+	<form class="form" style="border:solid;border-color:#7fffd4;color:white;font-size: 20px;font-family: 'Architects Daughter', cursive;">
+		<p><i class="fas fa-user-shield" style="color:#7fffd4"></i>   <b>First Name</b>
+	        <input type="text" placeholder="Your First name" class='filler' required> 
+	    </p>
+	    <p><i class="fas fa-user-shield" style="color:#7fffd4"></i>   <b>Last Name</b>
+	        <input type="text" placeholder="Your Last name" class='filler' required> 
+	    </p> 
+	    <p><i class="fas fa-envelope" style="color:#7fffd4"></i>  <b>Email-Id</b> 
+	    	 <input type="text" placeholder="Your Email-Id" class='filler' required> 
+	    </p> 
+	    <p><i class="fas fa-phone" style="color:#7fffd4"></i>   <b>Phone Number</b>
+	    	<input type="text" placeholder="Your Phone Number" class='filler' required> 
+	    </p>
+	     <p><i class="fas fa-utensils" style="color:#7fffd4"></i>  <b>How was the food quality?</b></p>
+	     	
+     			<label for="Phenomenal"><input id="Phenomenal" type="radio" name="confirm" style=" transform: scale(1.5);">Phenomenal</label>
+     			<label for="Very Good"><input type="radio" id="Very-Good"  name="confirm" style=" transform: scale(1.5);">Very Good</label> 
+     			<label for="Decent"><input type="radio" id="Decent"  name="confirm" style=" transform: scale(1.5);">Decent</label> 
+     			<label for="Average"><input type="radio" id="Average"  name="confirm" style=" transform: scale(1.5);">Average</label> 
+     			<label for="Bad"><input type="radio" id="Bad"  name="confirm" style=" transform: scale(1.5);">Bad</label> 
+     		
+     	<p><i class="fas fa-holly-berry" style="color:#7fffd4"></i>  <b>How was the decor and ambience?</b></p>
+	     	 <!--for radiobuttons-->
+     			<label for="Phenomenal"><input id="Phenomenal" type="radio" name="confirmation" style=" transform: scale(1.5);"> Phenomenal</label> <!--transform:scale(1.5) increases the size of radio buttons-->
+     			<label for="Very Good"><input type="radio" id="Very-Good"  name="confirmation" style=" transform: scale(1.5);">Very Good</label> 
+     			<label for="Decent"><input type="radio" id="Decent"  name="confirmation" style=" transform: scale(1.5);">Decent</label> 
+     			<label for="Average"><input type="radio" id="Average"  name="confirmation" style=" transform: scale(1.5);">Average</label> 
+     			<label for="Bad"><input type="radio" id="Bad"  name="confirmation" style=" transform: scale(1.5);">Bad</label> 
+     		
+     	<p><i class="fas fa-comments" style="color:#7fffd4"></i>  <b>How did you get to know about us?</b></p> 
+     	<label for="mouth"><input type="checkbox" name="medium" style=" transform: scale(1.5);">Word of mouth</label> 
+     	<label for="social-media"><input type="checkbox" name="medium" style=" transform: scale(1.5);">Social Media</label> 
+     	<label for="tewspaper"><input type="checkbox" name="medium" style=" transform: scale(1.5);">Newspaper</label> 
+     	<label for="television"><input type="checkbox" name="medium" style=" transform: scale(1.5);">Television</label> 
+     	<label for="website"><input type="checkbox" name="medium" style=" transform: scale(1.5);">Website Ads</label> 
+     	<p><i class="fas fa-birthday-cake" style="color:#7fffd4"></i>    <b>When is your birthday?</b> 
+     		<input type="date" placeholder="select date"class='filler' id="text">  
+     	</p> 
+     	<p><i class="fas fa-newspaper" style="color:#7fffd4"></i>   <b>Would like to recieve Email updates?</b>
+     		 <!--for radiobuttons-->
+     				<label for="yes"><input id="yes" type="radio" name="confirmation1" style=" transform: scale(1.5);">Ya sure!!</label>
+     				<label for="No"><input type="radio" id="no"  name="confirmation1" style=" transform: scale(1.5);">Later maybe</label>
+     			
+     	</p> 
+     	<p ><i class="fas fa-hand-holding-heart" style="color:#7fffd4"></i> <b>Any suggestions?</b></p>
+     	<textarea style="width:250px; height:100px" id="text"></textarea> 
+     	<p class='submit' style="text-align: center;">
+	     		<a href="submission.html" class='btn' >SUBMIT</a>
+	     </p>
+     	
+
+
+	</form>
+</div>
+<body>
+
+</body>
+</html>
